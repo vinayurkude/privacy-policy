@@ -1,39 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - Turf Booking App</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
-    h1 { color: #0F172A; }
-    h2 { color: #10B981; margin-top: 24px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - CricketScore Umpire</title>
+    <style>
+        :root {
+            --primary: #10B981;
+            --primary-dark: #059669;
+            --bg-dark: #0B1120;
+            --card-bg: #1E293B;
+            --text-main: #F8FAFC;
+            --text-muted: #94A3B8;
+            --border-color: #334155;
+            --accent-cyan: #06B6D4;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 40px 32px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .app-badge {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .effective-date {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 22px;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p, ul {
+            color: var(--text-muted);
+            font-size: 15px;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--text-main);
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight-box {
+            background: rgba(16, 185, 129, 0.08);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+
+        .footer {
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 24px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 18px;
+            }
+            h1 {
+                font-size: 26px;
+            }
+            h2 {
+                font-size: 19px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p><strong>Last Updated:</strong> September 2026</p>
 
-  <p>This Privacy Policy explains how our Sports Turf Booking application collects, uses, and safeguards your information when you use our mobile application and related services.</p>
+<div class="container">
+    <div class="header">
+        <div class="app-badge">CricketScore - Umpire</div>
+        <h1>Privacy Policy</h1>
+        <div class="effective-date">Last updated: September 22, 2026</div>
+    </div>
 
-  <h2>1. Information We Collect</h2>
-  <ul>
-    <li><strong>Personal Information:</strong> Name, phone number, and email address used for account creation.</li>
-    <li><strong>Device & Usage Data:</strong> Device identifiers and FCM tokens used for push notifications and booking updates.</li>
-    <li><strong>Payment Metadata:</strong> Transaction IDs and payment references processed securely via our payment gateway (Razorpay). We do not store raw card numbers or CVVs.</li>
-  </ul>
+    <div class="highlight-box">
+        <p><strong>Summary:</strong> CricketScore - Umpire ("we", "our", or "app") is designed to provide cricket scoring, umpire tools, tournament management, and statistics. Your cricket data (scores, teams, player rosters) is stored locally on your device. We respect your privacy and adhere to Google Play Developer Policies, GDPR, and CCPA standards.</p>
+    </div>
 
-  <h2>2. How We Use Your Information</h2>
-  <p>We use your information solely to facilitate slot bookings, send match notifications, manage team challenges, and process digital invoices.</p>
+    <h2>1. Information We Collect</h2>
+    <p>We collect information in the following categories to provide and improve the app experience:</p>
+    <ul>
+        <li><strong>Local Match & Scoring Data:</strong> Match scores, ball-by-ball events, custom team rosters, player profiles, tournament configurations, and umpire actions entered by you. This data is saved locally on your device using local storage.</li>
+        <li><strong>Device & Usage Data:</strong> When using the app, third-party analytics and ad networks may automatically receive non-personal technical information such as device model, OS version, approximate location (country/city level), and general app performance metrics.</li>
+        <li><strong>Advertising Identifiers:</strong> Standard anonymous mobile identifiers (e.g., Google Advertising ID / AAID) utilized by Google AdMob to serve relevant ads.</li>
+    </ul>
 
-  <h2>3. Third-Party Services</h2>
-  <p>Our app integrates with trusted third-party providers:</p>
-  <ul>
-    <li><strong>Firebase (Google):</strong> Authentication, database, and push messaging.</li>
-    <li><strong>Razorpay:</strong> Payment processing and transactions.</li>
-  </ul>
+    <h2>2. How We Use Information</h2>
+    <p>We use the collected information for the following purposes:</p>
+    <ul>
+        <li>To record, calculate, and present real-time cricket scores, run rates, and player career statistics.</li>
+        <li>To persist your custom teams, match archives, and user interface preferences (such as Dark Theme or Sunlight Mode).</li>
+        <li>To display relevant advertisements via Google AdMob (supporting free access to the app).</li>
+        <li>To monitor app stability, crash reports, and maintain overall service reliability.</li>
+    </ul>
 
-  <h2>4. Data Deletion & Contact</h2>
-  <p>You may request the deletion of your account and associated personal data at any time by contacting us at: <strong>support@yourturfapp.com</strong>.</p>
+    <h2>3. Third-Party Services & Advertising</h2>
+    <p>This app integrates trusted third-party SDKs that may collect data in accordance with their respective privacy policies:</p>
+    <ul>
+        <li><strong>Google AdMob:</strong> We use Google AdMob to serve banner and rewarded ads. AdMob may use device identifiers and cookies to serve ads based on your interests or non-personalized ads according to your consent settings.
+            <br>Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
+            <br>Google Advertising Policy: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">https://policies.google.com/technologies/ads</a>
+        </li>
+        <li><strong>Google Play Services:</strong> Used for core Android framework capabilities, app updates, and identity verification.
+            <br>Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
+        </li>
+        <li><strong>Firebase (Google LLC):</strong> Used for optional cloud synchronization, secure authentication, and crash telemetry if enabled.
+            <br>Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a>
+        </li>
+    </ul>
+
+    <h2>4. Data Storage & Security</h2>
+    <p>Your privacy and data security are paramount to us:</p>
+    <ul>
+        <li><strong>Local-First Architecture:</strong> Your scoring history, custom squads, and tournament data reside locally on your device.</li>
+        <li><strong>Industry Standard Security:</strong> Any network communication with third-party providers (such as AdMob or Google Play Services) is secured via HTTPS/TLS 1.3 encryption.</li>
+    </ul>
+
+    <h2>5. Data Retention & User Deletion Rights</h2>
+    <p>You have full control over your data:</p>
+    <ul>
+        <li><strong>Clear Data:</strong> You can delete all match histories, custom teams, and player statistics at any time by clearing the app data in your Android settings (<em>Settings &gt; Apps &gt; CricketScore &gt; Storage &gt; Clear Storage</em>) or uninstalling the app.</li>
+        <li><strong>Ad ID Reset:</strong> You can reset or opt out of personalized ads at any time through your Android device settings (<em>Settings &gt; Google &gt; Ads &gt; Reset Advertising ID / Delete Advertising ID</em>).</li>
+    </ul>
+
+    <h2>6. Children's Privacy (COPPA Compliance)</h2>
+    <p>CricketScore - Umpire is intended for general audiences (sports enthusiasts, local cricket clubs, and umpires). We do not knowingly collect or solicit personally identifiable information from children under the age of 13. If you believe that a child has provided us with personal information, please contact us so that we can promptly remove such data.</p>
+
+    <h2>7. GDPR & CCPA Privacy Rights</h2>
+    <p>Depending on your region (e.g., European Economic Area or California), you are entitled to specific rights regarding your personal information, including:</p>
+    <ul>
+        <li>The right to know what personal data is processed.</li>
+        <li>The right to request data erasure.</li>
+        <li>The right to opt-out of personalized advertising and tracking.</li>
+    </ul>
+
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy periodically to reflect new app features, regulations, or third-party SDK updates. Any changes will be posted on this page with an updated revision date.</p>
+
+    <h2>9. Contact Us</h2>
+    <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or your data, please contact us at:</p>
+    <ul>
+        <li><strong>Developer:</strong> CricketScore Team</li>
+        <li><strong>Email:</strong> <a href="mailto:support@cricketscore.app">support@cricketscore.app</a></li>
+        <li><strong>Package Name:</strong> <code>com.cricketscore.cricket_score</code></li>
+        <li><strong>GitHub Repository:</strong> <a href="https://github.com/vinayurkude/CricketScore_Umpire" target="_blank" rel="noopener">https://github.com/vinayurkude/CricketScore_Umpire</a></li>
+    </ul>
+
+    <div class="footer">
+        &copy; 2026 CricketScore - Umpire. All rights reserved.
+    </div>
+</div>
+
 </body>
 </html>
