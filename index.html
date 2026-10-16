@@ -170,13 +170,13 @@
 
 <div class="container">
     <div class="header">
-        <div class="app-badge">CricketScore - Umpire</div>
+        <div class="app-badge">Scorer - Cricket Umpire</div>
         <h1>Privacy Policy</h1>
-        <div class="effective-date">Last updated: October 14, 2026</div>
+        <div class="effective-date">Last updated: October 17, 2026</div>
     </div>
 
     <div class="highlight-box">
-        <p><strong>Summary:</strong> CricketScore - Umpire ("we", "our", or "app") provides cricket scoring, umpire tools, tournament management, player career statistics, and squad management. We respect your privacy and adhere to Google Play Developer Policies, GDPR, and CCPA standards. This policy explains exactly what data we collect, why we collect it, and how it is used.</p>
+        <p><strong>Summary:</strong> Scorer - Cricket Umpire ("we", "our", or "app", package: <code>com.vinayurkude.cricketscorer</code>) provides cricket scoring, umpire tools, tournament management, player career statistics, and squad management. We respect your privacy and adhere to Google Play Developer Policies, GDPR, and CCPA standards. This policy explains exactly what data we collect, why we collect it, and how it is used.</p>
     </div>
 
     <h2>1. Information We Collect</h2>
@@ -276,12 +276,11 @@
 
     <h2>4. Device Permissions We Request</h2>
     <ul>
-        <li><strong>INTERNET:</strong> Required for Firebase, Google Sign-In, and AdMob to function.</li>
-        <li><strong>ACCESS_NETWORK_STATE:</strong> Allows AdMob to check connectivity before loading ads.</li>
-        <li><strong>READ_CONTACTS:</strong> Used only when you tap "Import from Phone Contacts" to build a match squad. Requested at runtime with a clear disclosure dialog. You may deny this permission; the app functions fully without it.</li>
-        <li><strong>READ_MEDIA_IMAGES (Android 13+) / READ_EXTERNAL_STORAGE (Android 12 and below):</strong> Required to let you pick a profile photo from your device gallery. Requested at runtime when you tap "Change Profile Photo". You may deny this permission; the app functions fully without it.</li>
-        <li><strong>VIBRATE:</strong> Used for vibration feedback on squad invitation notifications.</li>
+        <li><strong>INTERNET:</strong> Required for Firebase, Google Sign-In, and AdMob network requests.</li>
+        <li><strong>ACCESS_NETWORK_STATE:</strong> Allows checking network availability before initiating sync or ad requests.</li>
+        <li><strong>VIBRATE:</strong> Used for tactile notification feedback on squad invitation events.</li>
     </ul>
+    <p><em>Note: Scorer does not request or require sensitive runtime permissions (such as Contacts or broad Storage access). Photo selection for match scorecards and profile avatars is handled via the secure, out-of-process Android System Photo Picker.</em></p>
 
     <h2>5. Third-Party Services &amp; Advertising</h2>
     <p>This app integrates the following trusted third-party SDKs:</p>
@@ -311,14 +310,13 @@
     <p>In full compliance with Google Play's User Data &amp; Account Deletion policies, you have complete control over your account and data:</p>
     <ul>
         <li><strong>In-App Deletion:</strong> You can initiate complete account and data deletion at any time within the app by going to <em>Profile &gt; Account &amp; Data Deletion &gt; Delete Account &amp; All Data</em>. This immediately and permanently deletes your Firebase authentication record, cloud directory profile, career statistics, squad connection requests, and all cloud-synced data.</li>
-        <li><strong>Web / Remote Deletion Request:</strong> If you no longer have access to the app or device, you can request full account and data deletion by emailing <a href="mailto:vinay.urkude@gmail.com">vinay.urkude@gmail.com</a> with the subject line <em>"Account Deletion Request - CricketScore"</em> from your registered Google account email. All associated data will be purged within 48 hours.</li>
-        <li><strong>Device Contacts Privacy:</strong> Contact data accessed during squad import is processed strictly on your local device. It is never stored remotely.</li>
-        <li><strong>Local Cache Clearing:</strong> You can delete all local device data via Android Settings &gt; Apps &gt; CricketScore &gt; Storage &gt; Clear Storage, or by uninstalling the app.</li>
+        <li><strong>Web / Remote Deletion Request:</strong> If you no longer have access to the app or device, you can request full account and data deletion by emailing <a href="mailto:vinay.urkude@gmail.com">vinay.urkude@gmail.com</a> with the subject line <em>"Account Deletion Request - Scorer"</em> from your registered Google account email. All associated data will be purged within 48 hours.</li>
+        <li><strong>Local Cache Clearing:</strong> You can delete all local device data via Android Settings &gt; Apps &gt; Scorer &gt; Storage &gt; Clear Storage, or by uninstalling the app.</li>
         <li><strong>Ad ID Reset:</strong> You can reset or opt out of personalized ads via Android Settings &gt; Google &gt; Ads &gt; Reset Advertising ID / Delete Advertising ID.</li>
     </ul>
 
     <h2>8. Children's Privacy (COPPA Compliance)</h2>
-    <p>CricketScore - Umpire is intended for users aged 13 and older. We do not knowingly collect personal information from children under the age of 13. If you believe a child has provided personal information to us, please contact us immediately so we can remove such data.</p>
+    <p>Scorer - Cricket Umpire is intended for users aged 13 and older. We do not knowingly collect personal information from children under the age of 13. If you believe a child has provided personal information to us, please contact us immediately so we can remove such data.</p>
 
     <h2>9. GDPR &amp; CCPA Privacy Rights</h2>
     <p>Depending on your region (European Economic Area or California), you are entitled to the following rights:</p>
