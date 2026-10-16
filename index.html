@@ -186,7 +186,6 @@
         <li><strong>Account &amp; Profile Data (Cloud):</strong> When you sign in with Google, we store your name, email address, and profile information (player role, batting/bowling style, club name) in Firebase Firestore to enable career statistics tracking and cross-device sync.</li>
         <li><strong>Profile Photo:</strong> If you choose to set a profile picture, the image you select from your device gallery is uploaded and stored in your Firebase profile. Photo access (gallery/media) is used solely for this purpose and is never used for any other purpose.</li>
         <li><strong>Squad Invitation Data:</strong> When you use the "Add to My Squad" feature, we store squad connection requests (sender UID, recipient UID, status, and timestamp) in Firestore to manage the invitation lifecycle. This data is permanently deleted when either user deletes their account.</li>
-        <li><strong>Device Contacts (Local Only):</strong> When you use the contact import tool to select teammates for a match squad, your device's address book is read locally on-device. Contact names, phone numbers, and email addresses are used only to populate your squad list. <strong>Contact data is never uploaded to any server, stored in any cloud database, or shared with any third party.</strong></li>
         <li><strong>Device &amp; Usage Data:</strong> Third-party analytics and ad networks may automatically receive non-personal technical information such as device model, OS version, approximate location (country/city level), and general app performance metrics.</li>
         <li><strong>Advertising Identifiers:</strong> Standard anonymous mobile identifiers (e.g., Google Advertising ID / AAID) used by Google AdMob to serve relevant advertisements.</li>
     </ul>
@@ -227,14 +226,6 @@
                 <td>Teammate linking</td>
                 <td>Yes (HTTPS/TLS)</td>
                 <td>Yes</td>
-            </tr>
-            <tr>
-                <td>Device Contacts</td>
-                <td>On-device only</td>
-                <td>No</td>
-                <td>Squad import</td>
-                <td>N/A (local only)</td>
-                <td>Yes (never stored)</td>
             </tr>
             <tr>
                 <td>Squad Connections</td>
@@ -279,9 +270,8 @@
         <li><strong>INTERNET:</strong> Required for Firebase, Google Sign-In, and AdMob network requests.</li>
         <li><strong>ACCESS_NETWORK_STATE:</strong> Allows checking network availability before initiating sync or ad requests.</li>
         <li><strong>VIBRATE:</strong> Used for tactile notification feedback on squad invitation events.</li>
-        <li><strong>READ_CONTACTS (Optional):</strong> Prominently disclosed in-app prior to request. Used solely when you choose to import teammates from your phone contacts into a match squad. Contacts are processed strictly locally on-device and are never uploaded, stored in the cloud, or shared with third parties. You may deny this permission and manually enter player names at any time.</li>
     </ul>
-    <p><em>Note: Scorer does not request broad media/storage permissions. Photo selection for match scorecards and profile avatars is handled via the secure, out-of-process Android System Photo Picker.</em></p>
+    <p><em>Note: Scorer requires <strong>NO sensitive runtime permissions</strong> (such as Contacts, Phone Book, Call Logs, SMS, Camera, Location, or broad Storage access). Photo selection for match scorecards and profile avatars is handled via the secure, out-of-process Android System Photo Picker.</em></p>
 
     <h2>5. Third-Party Services &amp; Advertising</h2>
     <p>This app integrates the following trusted third-party SDKs:</p>
