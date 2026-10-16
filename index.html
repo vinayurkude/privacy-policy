@@ -279,8 +279,9 @@
         <li><strong>INTERNET:</strong> Required for Firebase, Google Sign-In, and AdMob network requests.</li>
         <li><strong>ACCESS_NETWORK_STATE:</strong> Allows checking network availability before initiating sync or ad requests.</li>
         <li><strong>VIBRATE:</strong> Used for tactile notification feedback on squad invitation events.</li>
+        <li><strong>READ_CONTACTS (Optional):</strong> Prominently disclosed in-app prior to request. Used solely when you choose to import teammates from your phone contacts into a match squad. Contacts are processed strictly locally on-device and are never uploaded, stored in the cloud, or shared with third parties. You may deny this permission and manually enter player names at any time.</li>
     </ul>
-    <p><em>Note: Scorer does not request or require sensitive runtime permissions (such as Contacts or broad Storage access). Photo selection for match scorecards and profile avatars is handled via the secure, out-of-process Android System Photo Picker.</em></p>
+    <p><em>Note: Scorer does not request broad media/storage permissions. Photo selection for match scorecards and profile avatars is handled via the secure, out-of-process Android System Photo Picker.</em></p>
 
     <h2>5. Third-Party Services &amp; Advertising</h2>
     <p>This app integrates the following trusted third-party SDKs:</p>
