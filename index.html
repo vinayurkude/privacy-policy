@@ -172,7 +172,7 @@
     <div class="header">
         <div class="app-badge">Scorer - Cricket Umpire</div>
         <h1>Privacy Policy</h1>
-        <div class="effective-date">Last updated: October 17, 2026</div>
+        <div class="effective-date">Last updated: October 31, 2026 (Compliant with Google Play October 29, 2026 Policy Announcement)</div>
     </div>
 
     <div class="highlight-box">
@@ -271,7 +271,14 @@
         <li><strong>ACCESS_NETWORK_STATE:</strong> Allows checking network availability before initiating sync or ad requests.</li>
         <li><strong>VIBRATE:</strong> Used for tactile notification feedback on squad invitation events.</li>
     </ul>
-    <p><em>Note: Scorer requires <strong>NO sensitive runtime permissions</strong> (such as Contacts, Phone Book, Call Logs, SMS, Camera, Location, or broad Storage access). Photo selection for match scorecards and profile avatars is handled via the secure, out-of-process Android System Photo Picker.</em></p>
+    <p><em>Note: In full accordance with the <strong>Google Play Developer Policy Announcement (October 29, 2026)</strong>, Scorer requires <strong>NO sensitive runtime permissions</strong>:
+    <ul>
+        <li><strong>No Manage Contacts Permission:</strong> We do not request or access your device contacts or phone book. Roster creation and squad invitations operate exclusively via user-entered names or Cloud User IDs.</li>
+        <li><strong>No Broad Storage Access:</strong> We do not request <code>MANAGE_EXTERNAL_STORAGE</code> or legacy storage access. Photo selection for match scorecards and profile pictures is handled exclusively via the Android System Photo Picker (Scoped Media).</li>
+        <li><strong>No Location, SMS, or Call Log Permissions:</strong> We do not request or collect location, SMS, or call logs.</li>
+        <li><strong>No Local Network Permissions:</strong> We do not scan or access your local area network.</li>
+    </ul>
+    </em></p>
 
     <h2>5. Third-Party Services &amp; Advertising</h2>
     <p>This app integrates the following trusted third-party SDKs:</p>
